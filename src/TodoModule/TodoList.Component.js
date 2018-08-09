@@ -43,9 +43,8 @@ export default class TodoList extends Component {
   }
 
   renderTodoItemActions(todo, index) {
-    console.log(todo.completedStatus);
-    return (<input value={todo.completedStatus}
-      onClick={this.onStatusToggle.bind(this, index)}
+    return (<input checked={todo.completedStatus}
+      onChange={this.onStatusToggle.bind(this, index)}
       name="completedStatus"
       type="checkbox" />);
   }

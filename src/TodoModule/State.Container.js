@@ -42,7 +42,6 @@ class StateContainer {
 
   getTodoList(callback) {
     // mock browser comms
-    console.log(this.todoList);
     const t = setTimeout(() => {
       callback(this.todoList);
       clearTimeout(t);

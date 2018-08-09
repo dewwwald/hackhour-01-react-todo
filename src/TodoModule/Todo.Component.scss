@@ -1,0 +1,21 @@
+.grid {
+display: flex;
+flex-wrap: nowrap;
+border: 1px solid;
+box-shadow: 1px 1px 3px #888;
+border-radius: 10px;
+}
+
+.grid__item {
+padding: 10px 20px;
+}
+
+.w--fill {
+flex-grow: 1;
+width: auto;
+}
+
+.w--auto {
+flex-grow: 0;
+width: auto;
+}
